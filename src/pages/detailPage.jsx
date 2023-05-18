@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { PhotoContext } from '../context/store';
 import { useParams } from 'react-router-dom';
-import { ImageGroup, Image } from 'react-fullscreen-image';
+// import { ImageGroup, Image } from 'react-fullscreen-image';
 
 
 const DetailPage = () => {
