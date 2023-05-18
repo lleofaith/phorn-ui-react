@@ -15,7 +15,6 @@ const DetailPage = () => {
     return (
         <div className='max-w-[1200px] w-full mx-auto h-screen'>
             <h1 className='text-2xl sm:text-4xl text-white m-4 '>{titleName}</h1>
-            {/* <ImageGroup> */}
             <div className='mx-4 gap-4 columns-2 sm:columns-4'>
                 {
                     groupPhoto?.map((item, index) => (
@@ -28,7 +27,6 @@ const DetailPage = () => {
                     ))
                 }
             </div >
-            {/* </ImageGroup> */}
         </div>
     )
 }
