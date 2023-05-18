@@ -12,7 +12,7 @@ const InputSearch = () => {
     const fetchPhotos = async () => {
         try {
             setIsLoading(true);
-            const response = await axios.get(`${process.env.REACT_APP_BACKEND}` + search);
+            const response = await axios.get(`https://api-phorn.onrender.com/api/${search}`);
             const data = await response.data;
             setIsLoading(false);
             return data;
@@ -43,7 +43,7 @@ const InputSearch = () => {
 
     return (
         <div className='mx-auto px-4 my-4 w-full max-w-[600px] '>
-            <h1 className='text-md sm:text-4xl my-4 uppercase'>Look For Stuff</h1>
+            <h1 className='text-md sm:text-4xl my-4 text-white uppercase'>Look For Stuff</h1>
             <form className='  flex' onSubmit={handleSubmit}>
                 <input className='px-4 py-2 w-full rounded-l-md outline-none border' type="text" placeholder='serach xxx' value={search} onChange={(e) => setSearch(e.target.value)} />
                 <button className='px-4 py-2 rounded-r-md bg-blue-500 text-white' type='submit'>Search</button>
